@@ -6,27 +6,24 @@ public class Leaf {
 
         int totalSamplesCollected = 0;
         int rounds = 0;
-
-        System.out.println("Asif is collecting leaf samples in the park.");
-
-        while (true) {
-            System.out.print("Enter the number of leaf samples collected during this round: ");
+           while (true) {
+            System.out.print("the number of  samples collected in this round: ");
             int samplesInThisRound = scanner.nextInt();
 
             if (samplesInThisRound == 0) {
-                break; // Exit the loop if the user enters 0
+                break; 
             }
 
             totalSamplesCollected += samplesInThisRound;
             rounds++;
             
             if (totalSamplesCollected >= 30) {
-                break; // Exit the loop if at least 30 samples are collected
+                break; 
             }
         }
 
-        System.out.println("\nAsif completed " + rounds + " rounds around the park.");
-        System.out.println("He collected a total of " + totalSamplesCollected + " leaf samples.");
+        System.out.println("\nAsif went for " + rounds + " rounds around the park.");
+        System.out.println("total samples is" + totalSamplesCollected + " leaves");
 
         scanner.close();
     }
