@@ -16,14 +16,14 @@ public class LeafCollectionProgram {
             int samplesInThisRound = scanner.nextInt();
 
             if (samplesInThisRound == 0) {
-                break; // Exit the loop if the user enters 0
+                break;
             }
 
             totalSamplesCollected += samplesInThisRound;
             rounds++;
             
             if (totalSamplesCollected >= 30) {
-                break; // Exit the loop if at least 30 samples are collected
+                break; 
             }
         }
 
